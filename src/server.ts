@@ -31,3 +31,8 @@ mongoose
 
 
 app.use("/", indexRoutes);
+
+
+// Add this to the .env file in the realtime-car-data-server folder:
+// SERVER_PORT=1747
+// MONGO_URL=mongodb+srv://yubertmariscal:Y3kqfWr35Duoo1Gf@realtime-car-data.7hqjh.mongodb.net/realtime_car_data?retryWrites=true&w=majority&appName=realtime-car-data
