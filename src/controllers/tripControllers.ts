@@ -107,7 +107,6 @@ const removeSpecificTrip = async (req: any, res: any) => {
   try {
     const { id } = req.params ?? {};
     const trip = await Trip.findByIdAndDelete(id);
-    console.log("🚀 ~ removeSpecificTrip ~ id:", id)
     if (!trip)
       return res
         .status(404)
