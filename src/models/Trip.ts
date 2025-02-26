@@ -5,14 +5,8 @@ export interface ITrip extends Document {
   endDateTime: Date;
   price: number;
   vehicleId: string;
-  startLocation: {
-    latitude: number;
-    longitude: number;
-  };
-  endLocation: {
-    latitude: number;
-    longitude: number;
-  };
+  startLocation: string;
+  endLocation: string;
 }
 
 const TripSchema: Schema = new Schema(
