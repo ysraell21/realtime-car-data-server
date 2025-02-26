@@ -7,6 +7,7 @@ import {
   removeSpecificTrip,
   createMultipleTrips
 } from "../controllers/tripControllers";
+import { getAverageTripPricePerMonth } from "../controllers/chartControllers";
 const router = express.Router();
 
 //middleware
@@ -24,5 +25,6 @@ router.get("/trips/:id", getSpecificTrip)
 router.put("/trips/:id", updateTrip)
 router.delete("/trips/:id", removeSpecificTrip)
 
+router.get("/average-trip-price-per-month", getAverageTripPricePerMonth)
 
 export default router
